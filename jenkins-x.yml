@@ -1,0 +1,10 @@
+env:
+- name: DEPLOY_NAMESPACE
+  value: integration
+pipelineConfig:
+  env:
+  - name: DEPLOY_NAMESPACE
+    value: integration
+  - name: CHART_REPOSITORY
+    value: http://chartmuseum.web.dev.cluster.foxsports-gitops-prod.com.au
+  pipelines: {}
