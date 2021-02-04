@@ -1,4 +1,4 @@
-bedrock-k8s:
+netflix-api:
   env:
     SPRING_PROFILES_ACTIVE: local,demo
     NEW_RELIC_APP_NAME: netflix-api
