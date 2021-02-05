@@ -1,12 +1,15 @@
 dependencies:
-- name: exposecontroller
-  version: 2.3.118
+- alias: expose
+  name: exposecontroller
   repository: http://chartmuseum.jenkins-x.io
-  alias: expose
-- name: exposecontroller
   version: 2.3.118
+- alias: cleanup
+  name: exposecontroller
   repository: http://chartmuseum.jenkins-x.io
-  alias: cleanup
+  version: 2.3.118
+- name: foxtel-platform-communication-whispir-api
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 1.0.1
 - name: foxtel-platform-general-netflix-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.1
