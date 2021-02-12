@@ -1,10 +1,11 @@
 netflix-api:
   env:
-    SPRING_PROFILES_ACTIVE: local,demo
+    SPRING_PROFILES_ACTIVE: staging,demo
     NEW_RELIC_APP_NAME: netflix-api
     NEW_RELIC_LICENSE_KEY: c3a6b94918f96d44af11c628b52630d59f5ad20c
     NEW_RELIC_AGENT_ENABLED: true
     NEW_RELIC_DISTRIBUTED_TRACING_ENABLED: true
+    datasource.oracle-ds.jdbcUrl: jdbc:oracle:thin:@oracle-dev.c7brt7o5khbq.ap-southeast-2.rds.amazonaws.com:1521/DEV0WS
 
   probePath: /actuator/health
   livenessProbe:
