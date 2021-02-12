@@ -1,4 +1,4 @@
-netflix-api:
+foxtel-platform-general-netfix-api:
   env:
     SPRING_PROFILES_ACTIVE: staging,demo
     NEW_RELIC_APP_NAME: netflix-api
