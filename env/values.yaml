@@ -19,4 +19,4 @@ expose:
 jenkins:
   Servers:
     Global: {}
-prow: {}z
+prow: {}
