@@ -1,0 +1,32 @@
+foxtel-platform-general-account-management-api:
+  env:
+    SPRING_PROFILES_ACTIVE: staging,demo,json-logging
+    NEW_RELIC_APP_NAME: account-management-api
+    NEW_RELIC_LICENSE_KEY: c3a6b94918f96d44af11c628b52630d59f5ad20c
+    NEW_RELIC_AGENT_ENABLED: true
+    NEW_RELIC_DISTRIBUTED_TRACING_ENABLED: true
+    spring.datasource.oracle-ds.jdbcUrl: jdbc:oracle:thin:@oracle-dev.c7brt7o5khbq.ap-southeast-2.rds.amazonaws.com:1521/DEV0WS
+    spring.datasource.oracle-ds.username: admin
+  probePath: /actuator/health
+  livenessProbe:
+    initialDelaySeconds: 66
+    periodSeconds: 10
+    successThreshold: 1
+    timeoutSeconds: 1
+  readinessProbe:
+    periodSeconds: 10
+    successThreshold: 1
+    timeoutSeconds: 1
+  replicaCount: 1
+  resources:
+    limits:
+      cpu: 2000m
+      memory: 5120Mi
+    requests:
+      cpu: 500m
+      memory: 5120Mi
+  autoscaling:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 50
+    targetCPUUtilizationPercentage: 35
