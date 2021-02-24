@@ -15,4 +15,4 @@ dependencies:
   version: 1.0.2
 - name: foxtel-platform-general-netflix-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
-  version: 1.0.8
+  version: 0.0.0-PR-13-1-SNAPSHOT
