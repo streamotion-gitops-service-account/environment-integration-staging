@@ -16,6 +16,16 @@ dependencies:
 - name: foxtel-platform-general-device-management-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.8
+- name: foxtel-platform-general-authentication-service
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 1.0.1
 - name: foxtel-platform-general-netflix-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.13
+- name: foxtel-platform-general-payment-management-api
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 1.0.7
+- name: foxtel-platform-general-sales-management-api
+  repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
+  version: 1.0.6
+
