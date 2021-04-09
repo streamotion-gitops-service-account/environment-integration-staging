@@ -1,4 +1,4 @@
-foxtel-general-payment-management-api:
+foxtel-platform-general-payment-management-api:
   env:
     SPRING_PROFILES_ACTIVE: staging,demo,json-logging
     NEW_RELIC_APP_NAME: payment-management-api
