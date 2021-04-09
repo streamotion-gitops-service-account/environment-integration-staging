@@ -1,4 +1,4 @@
-account-management-api:
+foxtel-platform-general-account-management-api:
   env:
     SPRING_PROFILES_ACTIVE: staging,demo,json-logging
     NEW_RELIC_APP_NAME: account-management-api
