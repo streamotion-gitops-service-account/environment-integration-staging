@@ -15,7 +15,7 @@ dependencies:
   version: 1.0.19
 - name: foxtel-platform-general-device-management-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
-  version: 1.0.12
+  version: 1.0.13
 - name: foxtel-platform-general-authentication-service
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.5
