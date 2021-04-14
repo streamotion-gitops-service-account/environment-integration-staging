@@ -33,3 +33,8 @@ foxtel-platform-general-device-management-api:
     minReplicas: 1
     maxReplicas: 50
     targetCPUUtilizationPercentage: 35
+  serviceAccount:
+    create: true
+    annotations:
+      eks.amazonaws.com/role-arn: arn:aws:iam::841472843274:role/integration-device-mngmt-api-staging-iam-role
+    name: integration-device-mngmt-api-staging-iam-role
