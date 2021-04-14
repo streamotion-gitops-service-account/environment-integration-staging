@@ -1,4 +1,4 @@
-foxtel-platform-general-netflix-api:
+foxtel-platform-general-fieldservice-api:
   env:
     SPRING_PROFILES_ACTIVE: staging,demo,json-logging
     NEW_RELIC_APP_NAME: fieldservice-api
