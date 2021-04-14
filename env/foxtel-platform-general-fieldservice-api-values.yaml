@@ -1,0 +1,34 @@
+foxtel-platform-general-fieldservice-api:
+  env:
+    SPRING_PROFILES_ACTIVE: staging,demo,json-logging
+    NEW_RELIC_APP_NAME: fieldservice-api
+    NEW_RELIC_LICENSE_KEY: c3a6b94918f96d44af11c628b52630d59f5ad20c
+    NEW_RELIC_AGENT_ENABLED: true
+    NEW_RELIC_DISTRIBUTED_TRACING_ENABLED: true
+    ofsc.api.basePath: https://foxtel1.test.etadirect.com
+    ofsc.api.authorization: Basic ZmUxOGE0NDdiOTEwN2VkMjBjNmQzMTcyMmFjZTAzYzhmNzAxMzcxY0Bmb3h0ZWwxLnRlc3Q6NzA0MTIzYmQwNDViYzBjNmIyMjlkMjUwMDY2MjgyYzJlZGJlOTRiNzgxZWZjOGFlOTg3ZmU2OGJhYjdkZWY0OQ==
+    ofsc.api.connectionTimeout: 30
+    ofsc.api.readWriteTimeout: 30
+  probePath: /actuator/health
+  livenessProbe:
+    initialDelaySeconds: 66
+    periodSeconds: 10
+    successThreshold: 1
+    timeoutSeconds: 1
+  readinessProbe:
+    periodSeconds: 10
+    successThreshold: 1
+    timeoutSeconds: 1
+  replicaCount: 1
+  resources:
+    limits:
+      cpu: 2000m
+      memory: 5120Mi
+    requests:
+      cpu: 500m
+      memory: 5120Mi
+  autoscaling:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 50
+    targetCPUUtilizationPercentage: 35
