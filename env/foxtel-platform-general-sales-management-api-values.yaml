@@ -5,13 +5,18 @@ foxtel-platform-general-sales-management-api:
     NEW_RELIC_LICENSE_KEY: c3a6b94918f96d44af11c628b52630d59f5ad20c
     NEW_RELIC_AGENT_ENABLED: true
     NEW_RELIC_DISTRIBUTED_TRACING_ENABLED: true
-    spring.datasource.url: jdbc:sqlserver://foxtel-mssql.foxtel-mssql.svc.cluster.local:1433;databaseName=LeadManage
-    spring.datasource.username: sa
-    spring.datasource.password: 261YCTbf6hs2mO6peEum
+    spring.datasource.lead-management.url: jdbc:sqlserver://foxtel-mssql.foxtel-mssql.svc.cluster.local:1433;databaseName=LeadManage
+    spring.datasource.lead-management.username: sa
+    spring.datasource.lead-management.password: 261YCTbf6hs2mO6peEum
+    spring.datasource.realtime-sales.url: jdbc:sqlserver://foxtel-mssql.foxtel-mssql.svc.cluster.local:1433;databaseName=Dialler
+    spring.datasource.realtime-sales.username: sa
+    spring.datasource.realtime-sales.password: 261YCTbf6hs2mO6peEum
     spring.kafka.jaas.options.username: WEKC4I7C3FYHSGHN
     spring.kafka.jaas.options.password: PRU++sv4H8Z3SGpXbmvesfgwXKbZAQnrjCyJzkUL/zcjcko3YP18LQkhNwiLK0TL
     auth.username: leadmanagementuser
     auth.password: vmyexNaF%5tJgh6WmGk4
+    auth.realtimeUsername: salesLeadProcessUser
+    auth.realtimePassword: test
     kafka.topic.notifications.name: test.foxtel.integration.communication.notifications
     kafka.server: pkc-lz2dl.ap-southeast-2.aws.confluent.cloud:9092
   probePath: /actuator/health
@@ -37,3 +42,6 @@ foxtel-platform-general-sales-management-api:
     minReplicas: 1
     maxReplicas: 50
     targetCPUUtilizationPercentage: 35
+
+
+
