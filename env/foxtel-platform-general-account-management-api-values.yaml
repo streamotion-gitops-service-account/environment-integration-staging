@@ -7,6 +7,8 @@ foxtel-platform-general-account-management-api:
     NEW_RELIC_DISTRIBUTED_TRACING_ENABLED: true
     spring.datasource.url: jdbc:oracle:thin:@sit1ws.sms.foxtel.com.au:1700/SIT1WS.SMS.FOXTEL.COM.AU
     spring.datasource.username: ws
+    auth.username: admin
+    auth.password: admin
   probePath: /actuator/health
   livenessProbe:
     initialDelaySeconds: 66
