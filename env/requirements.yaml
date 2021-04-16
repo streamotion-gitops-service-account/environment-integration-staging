@@ -27,7 +27,7 @@ dependencies:
   version: 1.0.2
 - name: foxtel-platform-general-payment-management-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
-  version: 1.0.8
+  version: 1.0.11
 - name: foxtel-platform-general-sales-management-api
   repository: https://artifactory.cluster.foxsports-gitops-prod.com.au/artifactory/helm
   version: 1.0.11
